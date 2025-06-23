@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -10,7 +11,14 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Audi R8 trivia</title>
 	</head>
-	<body class="bg-neutral-950 ">
+	<body class="bg-neutral-950">
+		<nav class="text-neutral-100 absolute z-10 bg-black/90 w-dvw py-2 ">
+			<ul class="flex justify-around">
+				<li><a href="./">INICIO</a></li>
+				<li><a href="./">Video</a></li>
+			</ul>
+		</nav>
+
 		<slot />
 	</body>
 </html>
